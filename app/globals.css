@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .containerX {
+    @apply w-full max-w-[1920px] mx-auto px-4 sm:px-8 xl:px-16 2xl:px-28;
+  }
+
+  .label {
+    @apply text-base text-neutral-800 font-medium;
+  }
+
+  .input {
+    @apply w-full border border-neutral-300 p-3 bg-transparent rounded-lg outline-none focus:shadow-none focus:outline-none focus:ring-transparent;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
